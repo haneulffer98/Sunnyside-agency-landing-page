@@ -46,7 +46,6 @@ Users should be able to:
 - CSS Grid
 - Javascript
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 css: I've learnt a lot about display property, and how this css prop 
@@ -70,7 +69,7 @@ function toggleMobileMenu(menu) {
 
 ### Continued development
 
-I need to start focusing on Javascript more in the 
+I need to start focusing on Javascript more in the future.
 
 ### Useful resources
 
