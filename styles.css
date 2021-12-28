@@ -1,0 +1,628 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: block;
+}
+
+body {
+  display: block;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+html {
+  display: block;
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.1em;
+  position: absolute;
+  display: flex;
+  top: 20px;
+  right: 50px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-svg {
+  position: absolute;
+  top: 40px;
+  left: 2%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin-top: 20px;
+  cursor: pointer;
+  margin: 0;
+}
+
+nav a {
+  padding: 20px;
+  display: inline-flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+  color: white;
+}
+
+.contact-btn a {
+  font-family: "Fraunces", serif;
+  color: hsl(212, 27%, 19%);
+  background-color: white;
+  border-radius: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-content {
+  background-image: url("https://raw.githubusercontent.com/haneulffer98/Sunnyside-agency-landing-page/main/images/desktop/image-header.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 750px;
+}
+
+.page-title {
+  margin: auto 0;
+  position: absolute;
+  align-items: center;
+  width: 100%;
+  margin-top: -610px;
+}
+
+.page-title h1 {
+  padding: 5%;
+  font-size: 4em;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin-bottom: 2px;
+  color: white;
+  text-align: center;
+}
+
+.page-title svg {
+  position: absolute;
+  margin-left: 48%;
+  margin-top: -20px;
+}
+
+.sec-content {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.content-with-egg {
+  width: 50%;
+  padding: 125px 80px 10px 90px;
+  background-color: white;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.sec-content-title {
+  font-family: "Fraunces", serif;
+  font-size: 200%;
+  padding-bottom: 20px;
+  color: hsl(212, 27%, 19%);
+}
+
+.sec-content-p {
+  font-family: "Barlow", sans-serif;
+  font-size: 1em;
+  color: hsl(210, 4%, 67%);
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+
+.sec-content a {
+  font-family: "Fraunces", serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding-top: 15px;
+  text-decoration: none;
+}
+
+.inactive-line {
+  background-color: rgb(255, 230, 0);
+  opacity: 20%;
+  z-index: 99;
+  display: block;
+  position: relative;
+  margin-top: -7px;
+  width: 120px;
+  height: 10px;
+  border-radius: 10px;
+  content: "";
+  cursor: pointer;
+}
+
+/*hover/clicked states */
+
+.inactive-line:hover {
+  background-color: rgb(255, 230, 0);
+  opacity: 75%;
+  z-index: 10;
+  display: block;
+  position: relative;
+  top: -1.5%;
+  width: 120px;
+  height: 10px;
+  border-radius: 10px;
+  content: "";
+}
+
+.third-inactive-line:hover {
+  background-color: rgb(250, 0, 0);
+  opacity: 50%;
+  z-index: 99;
+  display: block;
+  position: relative;
+  top: -1.5%;
+  width: 120px;
+  height: 10px;
+  border-radius: 10px;
+  content: "";
+}
+
+.contact-btn a:hover {
+  font-family: "Fraunces", serif;
+  font-size: 1.1em;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.459);
+  border-radius: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-btn a:focus {
+  font-family: "Fraunces", serif;
+  font-size: 1.1em;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.459);
+  border-radius: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+/*hover/clicked states */
+.page-title {
+  display: inline-table;
+  align-items: center;
+}
+
+.egg-pic {
+  background-image: url("https://raw.githubusercontent.com/haneulffer98/Sunnyside-agency-landing-page/main/images/desktop/image-transform.jpg");
+  display: block;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+}
+
+.content-with-egg,
+.content-with-glass {
+  max-height: 600px;
+}
+
+.third-content {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.third-content a {
+  font-family: "Fraunces", serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding-top: 15px;
+  text-decoration: none;
+}
+
+.glass-pic {
+  background-image: url("https://raw.githubusercontent.com/haneulffer98/Sunnyside-agency-landing-page/main/images/desktop/image-stand-out.jpg");
+  display: block;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+}
+
+.content-with-glass {
+  width: 50%;
+  padding: 125px 80px 90px 90px;
+  background-color: white;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.third-inactive-line {
+  background-color: rgb(248, 66, 66);
+  opacity: 20%;
+  z-index: 99;
+  display: block;
+  position: relative;
+  margin-top: -7px;
+  width: 120px;
+  height: 10px;
+  border-radius: 10px;
+  content: "";
+  cursor: pointer;
+}
+
+.fourth-content {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: inline-flex;
+}
+
+.content-with-cherry {
+  background-image: url("https://raw.githubusercontent.com/haneulffer98/Sunnyside-agency-landing-page/main/images/desktop/image-graphic-design.jpg");
+  display: block;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  align-items: center;
+}
+
+.fourth-content-title {
+  font-family: "Fraunces", serif;
+  padding-top: 50%;
+  padding-bottom: 5%;
+  text-align: center;
+  color: hsl(167, 40%, 24%);
+  font-weight: 900;
+}
+
+.fourth-content-p {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.1em;
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  line-height: 25px;
+  color: hsl(167, 40%, 24%);
+}
+
+.content-with-orange {
+  background-image: url("https://raw.githubusercontent.com/haneulffer98/Sunnyside-agency-landing-page/main/images/desktop/image-photography.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  width: 50%;
+}
+
+.content-with-orange p {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.1em;
+  line-height: 25px;
+  color: hsl(198, 62%, 26%);
+}
+
+.content-with-orange h1 {
+  font-family: "Fraunces", serif;
+  padding-top: 50%;
+  bottom: 0;
+  text-align: center;
+  color: hsl(198, 62%, 26%);
+  font-weight: 900;
+}
+
+.fifth-content-title {
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  color: hsl(210, 4%, 67%);
+  text-align: center;
+  font-size: 100%;
+  margin-top: 50px;
+}
+
+.fifth-content {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  padding-top: 50px;
+}
+
+.emily-pic,
+.thomas-pic,
+.jennie-pic {
+  border-radius: 100%;
+  height: 13vh;
+  max-width: 100%;
+}
+
+.client {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 50px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.client-p {
+  font-family: "Barlow", sans-serif;
+  color: hsl(213, 9%, 39%);
+  padding-top: 50px;
+}
+
+.client-name {
+  font-family: "Fraunces", serif;
+  color: hsl(212, 27%, 19%);
+  font-size: 1em;
+  padding-top: 50px;
+}
+
+.client-job {
+  font-family: "Barlow", sans-serif;
+  color: hsl(210, 4%, 67%);
+  font-size: 0.8em;
+  padding-bottom: 100px;
+}
+
+.sixth-content {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.sixth-content img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.socmed img {
+  cursor: pointer;
+}
+
+.socmed img:hover {
+  filter: invert(100%) sepia(0%) saturate(90%) hue-rotate(0deg) brightness(100%)
+    contrast(900%);
+}
+
+.footer {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#footer-info {
+  padding: 20px;
+  font-family: "Barlow", sans-serif;
+  display: inline-flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+  color: white;
+}
+
+#footer-info:hover {
+  filter: invert(100%) sepia(0%) saturate(90%) hue-rotate(0deg) brightness(100%)
+    contrast(900%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+  padding-bottom: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+#hamburger-icon {
+  margin: 0;
+  display: none;
+  padding: 20px;
+  margin-left: 84%;
+  margin-top: -15px;
+  cursor: pointer;
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 130px;
+  background-color: white;
+  right: 10%;
+  z-index: 1000;
+  height: 50vh;
+  width: 80%;
+}
+
+.mobile-menu li {
+  margin-bottom: 20px;
+  margin-top: 45px;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  font-family: "Barlow", sans-serif;
+}
+
+#contact {
+  font-family: "Fraunces", serif;
+  background-color: yellow;
+  padding: 20px;
+  border-radius: 80px;
+}
+
+/*
+
+-----------------------FOR MOBILE-------------------------
+
+*/
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* ------header-------- */
+
+  header nav {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .logo-svg {
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+
+  /* ------contents-------- */
+  .page-title {
+    margin: auto 0;
+    position: absolute;
+    width: 100%;
+    margin-top: -530px;
+  }
+
+  .page-title svg {
+    margin-left: 46%;
+  }
+
+  .page-title h1 {
+    padding: 5%;
+    font-size: 2.5em;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin-bottom: 50px;
+    color: white;
+    text-align: center;
+  }
+  .egg-pic,
+  .glass-pic {
+    width: 100%;
+    height: 400px;
+  }
+  .sec-content {
+    display: grid;
+  }
+
+  .content-with-egg:nth-of-type(1) {
+    order: 2;
+  }
+  .egg-pic:nth-of-type(2) {
+    order: 1;
+  }
+
+  .content-with-egg,
+  .content-with-glass {
+    padding: 100px 20px 50px 20px;
+    text-align: center;
+    width: fit-content;
+
+    height: 500px;
+    margin: 0;
+  }
+
+  .learn-more {
+    display: inline-table;
+  }
+
+  .inactive-line,
+  .third-inactive-line {
+    margin-top: -4px;
+  }
+  .third-content,
+  .fourth-content,
+  .fifth-content {
+    display: grid;
+  }
+
+  .fourth-content {
+    width: 100%;
+  }
+
+  .content-with-cherry,
+  .content-with-orange {
+    width: 100%;
+  }
+
+  .content-with-cherry p {
+    padding-top: 50px;
+  }
+
+  .content-with-cherry h1 {
+    padding-top: 300px;
+  }
+
+  .content-with-orange {
+    height: 700px;
+  }
+
+  .content-with-orange p {
+    padding-top: 50px;
+  }
+
+  .content-with-orange h1 {
+    padding-top: 370px;
+  }
+
+  .sixth-content {
+    display: list-item;
+  }
+  .sixth-content img {
+    float: left;
+    width: 50%;
+    height: 200px;
+  }
+}
