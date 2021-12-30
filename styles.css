@@ -95,7 +95,7 @@ nav a {
   position: absolute;
   align-items: center;
   width: 100%;
-  margin-top: -610px;
+  margin-top: 140px;
 }
 
 .page-title h1 {
@@ -134,13 +134,13 @@ nav a {
 .sec-content-title {
   font-family: "Fraunces", serif;
   font-size: 200%;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   color: hsl(212, 27%, 19%);
 }
 
 .sec-content-p {
   font-family: "Barlow", sans-serif;
-  font-size: 1em;
+  font-size: 1.1em;
   color: hsl(210, 4%, 67%);
   line-height: 30px;
   padding-bottom: 20px;
@@ -150,72 +150,51 @@ nav a {
   font-family: "Fraunces", serif;
   font-size: 1em;
   text-transform: uppercase;
-  padding-top: 15px;
   text-decoration: none;
+  display: inline-block;
+  line-height: 0.1;
+  height: 0.8px;
+  border-bottom: 10px rgba(255, 241, 114, 0.575) solid;
 }
 
-.inactive-line {
-  background-color: rgb(255, 230, 0);
-  opacity: 20%;
-  z-index: 99;
-  display: block;
-  position: relative;
-  margin-top: -7px;
-  width: 120px;
-  height: 10px;
-  border-radius: 10px;
-  content: "";
-  cursor: pointer;
+.third-content a {
+  font-family: "Fraunces", serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 0.1;
+  height: 0.8px;
+  border-bottom: 10px rgba(243, 160, 160, 0.575) solid;
 }
 
 /*hover/clicked states */
 
-.inactive-line:hover {
-  background-color: rgb(255, 230, 0);
-  opacity: 75%;
-  z-index: 10;
-  display: block;
-  position: relative;
-  top: -1.5%;
-  width: 120px;
-  height: 10px;
-  border-radius: 10px;
+.sec-content a:focus {
+  border-color: rgb(255, 230, 0);
+  opacity: 80%;
   content: "";
 }
 
-.third-inactive-line:hover {
-  background-color: rgb(250, 0, 0);
-  opacity: 50%;
-  z-index: 99;
-  display: block;
-  position: relative;
-  top: -1.5%;
-  width: 120px;
-  height: 10px;
-  border-radius: 10px;
+.third-content a:focus {
+  border-color: rgb(243, 2, 2);
+  opacity: 80%;
   content: "";
-}
-
-.contact-btn a:hover {
-  font-family: "Fraunces", serif;
-  font-size: 1.1em;
-  color: white;
-  background-color: rgba(255, 255, 255, 0.459);
-  border-radius: 50px;
-  height: 50px;
-  align-items: center;
-  justify-content: center;
 }
 
 .contact-btn a:focus {
-  font-family: "Fraunces", serif;
-  font-size: 1.1em;
   color: white;
   background-color: rgba(255, 255, 255, 0.459);
-  border-radius: 50px;
-  height: 50px;
-  align-items: center;
-  justify-content: center;
+}
+
+.socmed img:hover {
+  filter: invert(100%) sepia(0%) saturate(90%) hue-rotate(0deg) brightness(100%)
+    contrast(900%);
+}
+
+#footer-info:focus {
+  filter: invert(100%) sepia(0%) saturate(90%) hue-rotate(0deg) brightness(100%)
+    contrast(900%);
 }
 
 /*hover/clicked states */
@@ -236,6 +215,7 @@ nav a {
 .content-with-egg,
 .content-with-glass {
   max-height: 600px;
+  display: grid;
 }
 
 .third-content {
@@ -270,20 +250,6 @@ nav a {
   padding-right: 10%;
 }
 
-.third-inactive-line {
-  background-color: rgb(248, 66, 66);
-  opacity: 20%;
-  z-index: 99;
-  display: block;
-  position: relative;
-  margin-top: -7px;
-  width: 120px;
-  height: 10px;
-  border-radius: 10px;
-  content: "";
-  cursor: pointer;
-}
-
 .fourth-content {
   margin: 0;
   padding: 0;
@@ -293,12 +259,13 @@ nav a {
 
 .content-with-cherry {
   background-image: url("https://raw.githubusercontent.com/haneulffer98/Sunnyside-agency-landing-page/main/images/desktop/image-graphic-design.jpg");
-  display: block;
+  display: grid;
   height: 600px;
   background-position: center;
   background-size: cover;
   width: 50%;
-  align-items: center;
+  align-content: end;
+  padding-bottom: 30px;
 }
 
 .fourth-content-title {
@@ -322,11 +289,13 @@ nav a {
 
 .content-with-orange {
   background-image: url("https://raw.githubusercontent.com/haneulffer98/Sunnyside-agency-landing-page/main/images/desktop/image-photography.jpg");
+  display: grid;
+  height: 600px;
   background-position: center;
   background-size: cover;
-  text-align: center;
-  position: relative;
   width: 50%;
+  align-content: end;
+  padding-bottom: 54px;
 }
 
 .content-with-orange p {
@@ -416,11 +385,6 @@ nav a {
   cursor: pointer;
 }
 
-.socmed img:hover {
-  filter: invert(100%) sepia(0%) saturate(90%) hue-rotate(0deg) brightness(100%)
-    contrast(900%);
-}
-
 .footer {
   margin: 0;
   padding: 0;
@@ -434,11 +398,6 @@ nav a {
   justify-content: space-evenly;
   text-decoration: none;
   color: white;
-}
-
-#footer-info:hover {
-  filter: invert(100%) sepia(0%) saturate(90%) hue-rotate(0deg) brightness(100%)
-    contrast(900%);
 }
 
 .attribution {
@@ -455,7 +414,7 @@ nav a {
   display: none;
   padding: 20px;
   margin-left: 84%;
-  margin-top: -15px;
+  margin-top: -1px;
   cursor: pointer;
 }
 
@@ -530,7 +489,7 @@ nav a {
     margin: auto 0;
     position: absolute;
     width: 100%;
-    margin-top: -530px;
+    margin-top: 90px;
   }
 
   .page-title svg {
@@ -555,6 +514,7 @@ nav a {
   }
   .sec-content {
     display: grid;
+    align-items: center;
   }
 
   .content-with-egg:nth-of-type(1) {
@@ -569,19 +529,10 @@ nav a {
     padding: 100px 20px 50px 20px;
     text-align: center;
     width: fit-content;
-
     height: 500px;
     margin: 0;
   }
 
-  .learn-more {
-    display: inline-table;
-  }
-
-  .inactive-line,
-  .third-inactive-line {
-    margin-top: -4px;
-  }
   .third-content,
   .fourth-content,
   .fifth-content {
